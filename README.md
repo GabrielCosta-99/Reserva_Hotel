@@ -31,5 +31,5 @@ O projeto foi criado na linguagem JAVA.
         }
 
 Função HASH que recebe uma string como entrada e retorna um valor hash. O uso do número primo 31 como multiplicador ajuda a distribuir melhor os valores de hash e reduzir colisões.
-O uso do número primo 31 como multiplicador ajuda a distribuir melhor os valores de hash e reduzir colisões.
+
 
