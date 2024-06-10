@@ -20,6 +20,16 @@ O problema previsto são as colisões que são encontradas no decorrer da incers
 Para que seja demonstrado a funcionalidade do sistema, foi implementado um carga de arquivos de resevas, para demonstrar o tratamento das possiveis colisões. 
 O projeto foi criado na linguagem JAVA.
 
-# Fila de espera
 # Função HASH
-# Linguagem Usad
+
+  private int hashSimples(String entrada) {
+      int valorHash = 0;
+      for (char c : entrada.toCharArray()) {
+          valorHash = (valorHash * 31 + (int) c) % 1_000_000_007;
+      }
+      return valorHash;
+  }
+
+Função HASH que recebe uma string como entrada e retorna um valor hash. O uso do número primo 31 como multiplicador ajuda a distribuir melhor os valores de hash e reduzir colisões.
+O uso do número primo 31 como multiplicador ajuda a distribuir melhor os valores de hash e reduzir colisões.
+
